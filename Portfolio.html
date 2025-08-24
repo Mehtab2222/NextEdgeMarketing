@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio—NextEdge Marketing</title>
+  <meta name="description" content="Explore NextEdge Marketing portfolio and case studies showing client success stories." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body {margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif;color:#0f172a;background:#ffffff;line-height:1.6}
+    a {color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#0a74da,#59b0ff);display:grid;place-items:center;color:#fff;font-weight:700}
+    .nav-links{display:flex;gap:22px}
+    .nav-links a{color:#334155;font-weight:600}
+    section{padding:56px 0}
+    h1{font-size:36px;margin:16px 0}
+    h2{font-size:26px;margin:20px 0 10px}
+    .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+    .case{background:#f8fafc;border:1px solid #e5e7eb;border-radius:16px;padding:20px;transition:box-shadow .2s}
+    .case:hover{box-shadow:0 8px 20px rgba(2,6,23,.08)}
+    .case h3{margin-top:0}
+    .case p{color:#475569}
+    footer{border-top:1px solid #e5e7eb;padding:30px 0;color:#475569;margin-top:40px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand"><div class="logo">NE</div>NextEdge Marketing</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>Our Portfolio</h1>
+    <p>Here are a few case studies showing how we’ve helped businesses achieve measurable growth through digital marketing.</p>
+
+    <div class="grid">
+      <article class="case">
+        <h3>Local Café Growth</h3>
+        <p><strong>Challenge:</strong> Low customer footfall.</p>
+        <p><strong>Solution:</strong> Instagram ad campaigns + Local SEO.</p>
+        <p><strong>Result:</strong> 40% increase in walk-in customers within 2 months.</p>
+      </article>
+
+      <article class="case">
+        <h3>E-commerce Startup</h3>
+        <p><strong>Challenge:</strong> Low online sales and brand awareness.</p>
+        <p><strong>Solution:</strong> Google Shopping Ads + Conversion Optimization.</p>
+        <p><strong>Result:</strong> 3x sales growth in 6 months.</p>
+      </article>
+
+      <article class="case">
+        <h3>Educational Institute</h3>
+        <p><strong>Challenge:</strong> Struggling to generate student leads.</p>
+        <p><strong>Solution:</strong> Facebook lead ads + Content marketing.</p>
+        <p><strong>Result:</strong> 120% increase in quality leads per month.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> NextEdge Marketing. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog—NextEdge Marketing</title>
+  <meta name="description" content="Read digital marketing tips, strategies, and insights from NextEdge Marketing." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body {margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif;color:#0f172a;background:#ffffff;line-height:1.6}
+    a {color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#0a74da,#59b0ff);display:grid;place-items:center;color:#fff;font-weight:700}
+    .nav-links{display:flex;gap:22px}
+    .nav-links a{color:#334155;font-weight:600}
+    section{padding:56px 0}
+    h1{font-size:36px;margin:16px 0}
+    .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+    .post{background:#f8fafc;border:1px solid #e5e7eb;border-radius:16px;padding:20px;transition:box-shadow .2s;display:flex;flex-direction:column;justify-content:space-between}
+    .post:hover{box-shadow:0 8px 20px rgba(2,6,23,.08)}
+    .post h2{margin-top:0;font-size:22px}
+    .post p{color:#475569}
+    .readmore{margin-top:12px;color:#0a74da;font-weight:600}
+    footer{border-top:1px solid #e5e7eb;padding:30px 0;color:#475569;margin-top:40px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand"><div class="logo">NE</div>NextEdge Marketing</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>Our Blog</h1>
+    <p>Tips, strategies, and case studies to help you grow your business with digital marketing.</p>
+
+    <div class="grid">
+      <article class="post">
+        <h2>5 SEO Tips for Small Businesses</h2>
+        <p>Learn the essential steps that can help your business rank better on Google without spending a fortune.</p>
+        <a href="#" class="readmore">Read More →</a>
+      </article>
+
+      <article class="post">
+        <h2>Why Social Media is a Game Changer</h2>
+        <p>Discover how Instagram, LinkedIn, and Facebook can drive brand awareness and generate leads effectively.</p>
+        <a href="#" class="readmore">Read More →</a>
+      </article>
+
+      <article class="post">
+        <h2>Running Google Ads on a Budget</h2>
+        <p>Step-by-step guide for startups to get results from paid ads without overspending.</p>
+        <a href="#" class="readmore">Read More →</a>
+      </article>
+
+      <article class="post">
+        <h2>Content Marketing That Converts</h2>
+        <p>How to create blogs and posts that attract, engage, and convert your audience into customers.</p>
+        <a href="#" class="readmore">Read More →</a>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> NextEdge Marketing. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

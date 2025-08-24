@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us — NextEdge Marketing</title>
+  <meta name="description" content="Learn more about NextEdge Marketing — our story, mission, and values." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body {margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif;color:#0f172a;background:#ffffff;line-height:1.6}
+    a {color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#0a74da,#59b0ff);display:grid;place-items:center;color:#fff;font-weight:700}
+    .nav-links{display:flex;gap:22px}
+    .nav-links a{color:#334155;font-weight:600}
+    section{padding:56px 0}
+    h1{font-size:36px;margin:16px 0}
+    h2{font-size:26px;margin:20px 0 10px}
+    .about-intro{text-align:center;max-width:720px;margin-inline:auto}
+    .values{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:32px}
+    .value{background:#f8fafc;border:1px solid #e5e7eb;border-radius:16px;padding:20px;text-align:center;transition:transform .2s}
+    .value:hover{transform:translateY(-4px)}
+    footer{border-top:1px solid #e5e7eb;padding:30px 0;color:#475569;margin-top:40px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand"><div class="logo">NE</div>NextEdge Marketing</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container about-intro">
+    <h1>About Us</h1>
+    <p>At NextEdge Marketing, we believe that every business — no matter how small — deserves access to powerful digital marketing strategies. Our agency was founded with the vision to empower startups and local businesses to grow online without breaking the bank.</p>
+  </section>
+
+  <section class="container">
+    <h2>Our Mission</h2>
+    <p>To deliver affordable, transparent, and results-driven digital marketing solutions that help businesses grow in the digital-first world.</p>
+
+    <h2>Our Story</h2>
+    <p>Founded in 2025, NextEdge Marketing started as a small initiative to support entrepreneurs in India. Today, we partner with diverse businesses — from cafés to tech startups — helping them reach the right audience through SEO, ads, and social media.</p>
+  </section>
+
+  <section class="container">
+    <h2>Our Core Values</h2>
+    <div class="values">
+      <div class="value">
+        <h3>Transparency</h3>
+        <p>We believe in open communication, clear reporting, and honest results with our clients.</p>
+      </div>
+      <div class="value">
+        <h3>Innovation</h3>
+        <p>We adapt to the latest tools, platforms, and trends to keep our clients ahead of the competition.</p>
+      </div>
+      <div class="value">
+        <h3>Growth</h3>
+        <p>Your success is our success. We focus on strategies that bring measurable business results.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> NextEdge Marketing. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

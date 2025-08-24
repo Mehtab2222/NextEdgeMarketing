@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services—NextEdge Marketing</title>
+  <meta name="description" content="Explore digital marketing services by NextEdge Marketing: SEO, social media, ads, and more." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body {margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif;color:#0f172a;background:#ffffff;line-height:1.6}
+    a {color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#0a74da,#59b0ff);display:grid;place-items:center;color:#fff;font-weight:700}
+    .nav-links{display:flex;gap:22px}
+    .nav-links a{color:#334155;font-weight:600}
+    section{padding:56px 0}
+    h1{font-size:36px;margin:16px 0}
+    .grid{display:grid;gap:18px}
+    .grid.auto{grid-template-columns:repeat(3,1fr)}
+    @media(max-width:900px){.grid.auto{grid-template-columns:1fr 1fr}}
+    @media(max-width:640px){.grid.auto{grid-template-columns:1fr}}
+    .service{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px;transition:box-shadow .2s}
+    .service:hover{box-shadow:0 8px 20px rgba(2,6,23,.08)}
+    .service h2{margin-top:0;font-size:22px}
+    .service p{color:#64748b}
+    footer{border-top:1px solid #e5e7eb;padding:30px 0;color:#475569;margin-top:40px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand"><div class="logo">NE</div>NextEdge Marketing</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>Our Services</h1>
+    <p>We provide ROI‑focused digital marketing services that help small businesses and startups grow in a competitive world.</p>
+    <div class="grid auto">
+      <article class="service" id="seo">
+        <h2>Search Engine Optimization (SEO)</h2>
+        <p>Rank higher on Google with on‑page SEO, local SEO, and keyword strategy. We optimize technical factors to drive organic traffic.</p>
+      </article>
+      <article class="service" id="smm">
+        <h2>Social Media Marketing (SMM)</h2>
+        <p>We create engaging content calendars, manage platforms, and run ads on Instagram, Facebook, and LinkedIn to boost brand presence.</p>
+      </article>
+      <article class="service" id="ppc">
+        <h2>Pay‑Per‑Click Advertising (PPC)</h2>
+        <p>Targeted ad campaigns on Google & Meta that generate quality leads. Includes landing page optimization and ad copy testing.</p>
+      </article>
+      <article class="service" id="content">
+        <h2>Content Marketing</h2>
+        <p>Blogs, case studies, and copywriting designed to educate your audience, build trust, and improve search visibility.</p>
+      </article>
+      <article class="service" id="cro">
+        <h2>Conversion Rate Optimization (CRO)</h2>
+        <p>We analyze user behavior, run A/B tests, and apply UX improvements to convert more visitors into paying customers.</p>
+      </article>
+      <article class="service" id="branding">
+        <h2>Branding & Design</h2>
+        <p>From logo design to social templates, we craft brand identities that stand out and communicate trust.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> NextEdge Marketing. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

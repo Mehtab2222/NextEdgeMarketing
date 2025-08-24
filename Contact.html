@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — NextEdge Marketing</title>
+  <meta name="description" content="Get in touch with NextEdge Marketing. Contact us for digital marketing services." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body {margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif;color:#0f172a;background:#f8fafc;line-height:1.6}
+    a {color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#0a74da,#59b0ff);display:grid;place-items:center;color:#fff;font-weight:700}
+    .nav-links{display:flex;gap:22px}
+    .nav-links a{color:#334155;font-weight:600}
+
+    section{padding:60px 0}
+    h1{font-size:36px;margin:16px 0;text-align:center}
+
+    .contact-wrapper{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:40px}
+    @media(max-width:900px){.contact-wrapper{grid-template-columns:1fr}}
+
+    .contact-info{background:#0a74da;color:#fff;border-radius:16px;padding:30px;display:flex;flex-direction:column;gap:20px}
+    .contact-info h2{margin:0;font-size:28px}
+    .contact-info p{margin:0;display:flex;align-items:center;gap:12px;font-size:16px}
+
+    .contact-form{background:#fff;border-radius:16px;padding:30px;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+    form{display:grid;gap:16px}
+    input,textarea{padding:12px 14px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px;width:100%;outline:none}
+    textarea{resize:vertical;min-height:120px}
+    button{background:#0a74da;color:#fff;padding:14px 20px;border:none;border-radius:10px;font-size:16px;font-weight:600;cursor:pointer;transition:background .3s, transform .2s}
+    button:hover{background:#085bb5;transform:translateY(-2px)}
+
+    .map-container{margin-top:30px;border-radius:16px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.1)}
+    iframe{width:100%;height:250px;border:0;border-radius:16px}
+
+    footer{border-top:1px solid #e5e7eb;padding:30px 0;color:#475569;margin-top:40px;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand"><div class="logo">NE</div>NextEdge Marketing</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>📧 Email: contact@nextedgemarketing.in</p>
+        <p>📞 Phone: +91 98765 43210</p>
+        <p>📍 Location: Mumbai, India</p>
+        <p>We’re here to answer your questions and help you grow your business online.</p>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60275.20456723628!2d72.8108!3d19.082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63b2b3c0e8f%3A0x8b8f6c1a5b2e3e0!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1692952620000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> NextEdge Marketing. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
